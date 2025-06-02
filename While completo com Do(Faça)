@@ -1,0 +1,61 @@
+#include <iostream>
+using namespace std;	
+int main() {
+
+	/*int n;
+
+	n = 0;
+
+	while (n<10) { //While é enquanto
+		cout << n << "\n"; // vai gerar um loop infinito, pois n nunca é incrementado	
+		//n++; // Incrementa n em 1 a cada iteração do loop, e não faz parte da sintaxe do while
+		cin >> n; //não precisa incrementar ou decrementar necessariamente
+
+	}
+	*/
+
+	/*int cont;
+	cont = 0;
+	while (cont < 10) {
+		cout << "Meu nome\n"; // Vai imprimir "Meu nome" 10 vezes, pois cont começa em 0 e vai até 9, pode ser string ou inteiro
+		cont++;
+	} */
+
+	// não esquecer: inicilizar a variável da expressão while, e verificar a condição de parada, para não gerar um loop infinito.
+
+	/*int cont;
+	cont = 20;
+	while (cont>0) {
+		cout << "Meu nome\n" << cont << "\n"; // Vai imprimir "Meu nome" 20 vezes, pois cont começa em 20 e vai até 1, pode ser string ou inteiro
+		cont--;//pode ser feito assim, ou até com <20 cont ++
+	}*/
+
+	/*int cont;
+	cont = 0;
+	while (cont++<20) //o incremento pode vir direto na expressão do while, e não precisa ser feito dentro do loop
+	{
+		cout << "Meu nome " << cont << "\n";  
+	} */
+
+	/*int cont;
+	cont = 0;
+	while (cont < 20) //o incremento pode vir direto na expressão do while, e não precisa ser feito dentro do loop
+	{
+		cout << "Meu nome " << cont << "\n";
+		cont += 2; // Incrementa cont em 2 a cada iteração do loop, e não faz parte da sintaxe do while
+		if (cont == 10) {  // condição de parada, se cont for igual a 10, o loop para, não imprime mais nada 
+			break; // break interrompe o loop
+			// nesse caso, não precisa da chave de fechamento do if, ppois só tem uma linha de código dentro do if, mas é uma boa prática usar chaves para evitar erros futuros
+		} */ //se não tivesse o break, o loop continuaria até cont ser igual a 20, e imprimiria "Meu nome 10" e "Meu nome 12" e assim por diante até 20
+
+int cont;
+cont = 20;
+do{ //do while é executado pelo menos uma vez, mesmo que a condição seja falsa
+	//a diferença do while é que a condição é verificada no final do loop, enquanto no while é verificada no início
+	//ou seja, o do while sempre executa pelo menos uma vez, enquanto o while pode não executar nenhuma vez se a condição for falsa desde o início
+	cout << "Meu nome " << cont << "\n";
+	cont++;
+} while (cont < 20);
+
+	return 0;
+}
