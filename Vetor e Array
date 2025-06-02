@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+int main() {
+
+	/*int vetor[10]; // Ela cria uma váriavel com 10 posições, ou seja, de 0 a 9, o array é o []
+	int i;
+
+	vetor[0] = 10; // o 0 no [] é o índice, ou seja, a posição do array que você quer acessar. E indico o valor que quero que aquela posição tenha.
+ vetor[1] = 20;
+	vetor[2] = 30;
+	vetor[3] = 40;
+	vetor[4] = 50;
+	vetor[5] = 60;
+	vetor[6] = 70;
+	vetor[7] = 80;
+	vetor[8] = 90;
+	vetor[9] = 100; 
+
+	//for (i = 0; i < 10; i++) { // os valos em 1 são a representações dos arrays, no caso 10 é a nona posição
+		// como i < 10, vai imprimir s os números do vetor, de 0 a 9.
+
+	for (i = 0; i < sizeof(vetor)/4; i++) { // sizeof(vetor) retorna o tamanho total do array em bytes, mas se dividir por 4 (tamanho de um int), você obtém o número de elementos no array.
+		cout << vetor[i] << "\n"; // Aqui eu estou acessando a posição 0 do array, que é o número 10, e imprimindo na tela.
+		*/
+		// colocar um vetor inexistente , por exemplo vetor[10]; vai dar erro, pois o array só tem posições de 0 a 9.
+	
+	int tam = 10; // Definindo o tamanho do vetor como 10
+	int vetor[tam]; // Declarando um vetor de inteiros com 10 posições pq do tam 
+	int i;
+
+	vetor[0] = 10;
+	vetor[1] = 20;
+	vetor[2] = 30;
+	vetor[3] = 40;
+	vetor[4] = 50;
+	vetor[5] = 60;
+	vetor[6] = 70;
+	vetor[7] = 80;
+	vetor[8] = 90;
+	vetor[9] = 100;
+
+	for (i = 0; i < tam; i++) {
+		cout << vetor[i] << "\n";
+
+	return 0;
+}
