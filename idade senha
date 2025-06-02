@@ -1,0 +1,23 @@
+#include <iostream>
+using namespace std;
+int main(){
+
+	string senha;
+	int idade;
+	string senha2;
+
+	cout << "Defina sua senha: ";
+	cin >> senha;
+	cout << "Defina sua senha novamente: ";
+	cin >> senha2;
+	cout << "Defina sua idade: ";
+	cin >> idade;
+
+	if ((senha == senha2)and(idade>=18)) {
+		cout << "\n\nVoce e gente.\n\n\n";
+	}else{
+		cout << "\n\nVoce nao e bem vindo.\n\n\n";
+	}
+
+	return 0;
+}
