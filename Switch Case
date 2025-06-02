@@ -1,0 +1,84 @@
+#include <iostream>
+using namespace std;
+int main() {
+
+	/*/switch (expressão) {
+
+	case conat1:
+			comandos;
+			break; // serve para sair do switcg e continuar execução normal do programa, sai do case e do switch
+		case conat2:
+				comandos;
+				break;
+			default: O default é "Se b der nenhuma expressão, vem para cá, mas ele não é obrigatorio. No caso de querer dxar nada.
+				comandos;
+				*/ // essa é a sintaxe do switch
+
+				/*int val;  // Declarando uma variável inteira para armazenar o valor da cor escolhida
+
+		cout << "Selecione uma cor:\n";
+		cout << "[1,2,3]= Verde [4,5,6]= Azul [7,8,9]= Vermelho\n"; // Exemplo de switch. Pode ser para qlqr numero ali. Seja 1 ou mais
+
+	cin >> val;
+
+	switch(val){
+	case 1:
+	case 2:
+	case 3:
+		cout << "cor escolhida: Verde";
+		break;
+	case 4: 
+	case 5:
+	case 6:
+		cout << "cor escolhida: Azul";
+		break;
+	case 7:
+	case 8:
+	case 9:
+		cout << "cor escolhida: Vermelho";
+		break;
+
+	default:
+		cout << "Cor invalida.";
+
+	}
+	cout << "\nPrograma finalizado";
+	*/
+
+	int val;
+
+	cout << "Selecione um transporte:\n";	
+	cout << "Carro=1 = Moto =2 Aviao=3 Helicoptero=4 \n"; 	
+		cin >> val;
+	
+	switch (val) {
+		case 1: // Carro
+		case 2: // Moto
+			
+			cout << "Transporte terrestre escolhido.\n";
+			switch (val) {
+			case 1:
+				cout << "Você escolheu Carro.\n";
+				break;
+			case 2:
+				cout << "Você escolheu Moto.\n";
+				break;
+			}
+		case 3: // Avião
+		case 4: // Helicóptero
+			
+			cout << "Transporte aereo escolhido.\n";
+				switch (val) {
+				case 3:
+					cout << "Voce escolheu Aviao.\n";
+					break;
+				case 4:
+					cout << "Voce escolheu Helicoptero.\n";
+					break;
+				}
+			
+			
+	}
+		
+		return 0;
+}
