@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;	
+int main() {
+
+	int x;
+	for (x = 0; x < 20; x++) { // cumpre os comandos abaixo até o fim do parâmetro, até lá continua o loop, ( inicio; condição;i. ou d.)
+		if (x == 10) // se x for igual a 10, pula para o próximo comando do loop, no caso esquece o 10 e continua com o próximo valor de x
+			continue;
+		if (x == 15) // se x for igual a 15, sai do loop
+			break;
+		cout << "Valor de x: " << x << "\n"; 
+
+		/*uma forma simples e "direta" do comando
+		int x;
+for (x = 0; x < 20; x++) {  ou (x = 0; x <= 20; x++)
+		cout << x << "\n";
+		}
+
+		int x, y; // outra forma de fazer o loop, com dois ou mais, um para cada variável, nesse caso x e y. Tbm é possivel colocar o and or not
+		for (x = 0, y =1; x <= 20; x++, y+=2){
+		cout << x << "-" << y << "\n";
+		}
+		A varíavel pode ser declarada dentro do loop. como for(int tmp=0) a variavel tmp só existe dentro do loop, e não pode ser usada fora dele. 
+		E se fizer a variavel sem corpo, ela só conta como 1 tempo pq sem cout ela não faz nada, só conta como 1 tempo, ou seja, o loop só vai até 1 vez.
+		*/
+
+
+
+
+		 
+	return 0;
+}
