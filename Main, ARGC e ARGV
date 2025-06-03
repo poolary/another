@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string.h> // Biblioteca para manipulação de strings
+
+using namespace std;
+int main(int argc, char* argv[]) { // vai guardar a quantidade de parametros, argumentos, e argv é um ponteiro para uma matriz de ponteiro.
+
+	/*cout << argv[3] << "\n"; // o primeiro argumento é o nome do programa, para imprimir o parametro basta mudar o 0
+	cout << argc << "\n"; */
+
+
+	if (argc > 1) { // Verifica se há mais de um argumento passado, ou seja, se o usuário passou algum parâmetro além do nome do programa.
+		if (!strcmp(argv[1], "sol")) { // strcmp é uma função da biblioteca string.h que compara duas strings e retorna 0 se elas forem iguais.
+			cout << "Vou ao clube. \n\n";
+		}
+		else if (!strcmp(argv[1], "nublado")){ // Se o primeiro argumento for "nubla", imprime a mensagem correspondente.
+			cout << "Vou ao cinema. \n\n"; // tem q negar q se for zero, logo é 1, que é verdadeiro
+		}else { // Se o primeiro argumento não for nenhum dos anteriores, imprime uma mensagem padrão.
+			cout << "Vou ficar em casa. \n\n";
+		} // não achei a opção de usar argc no Community, então não funciona
+	}
+	return 0;
+}
